@@ -1,0 +1,64 @@
+{
+  "name": "almousli-restaurang",
+  "version": "1.0.0",
+  "description": "Bilingual restaurant website for Almousli Restaurang in Eskilstuna, Sweden",
+  "author": "Almousli Restaurang",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3002",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "sanity": "cd sanity && sanity dev",
+    "sanity:build": "cd sanity && sanity build",
+    "sanity:deploy": "cd sanity && sanity deploy",
+    "install:all": "npm install && cd sanity && npm install && cd ..",
+    "clean": "rd /s /q .next node_modules sanity\\node_modules 2>nul || exit 0",
+    "reinstall": "npm run clean && npm run install:all"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "keywords": [
+    "restaurant",
+    "nextjs",
+    "sanity",
+    "multilingual",
+    "rtl",
+    "arabic",
+    "shawarma",
+    "middle-eastern",
+    "eskilstuna"
+  ],
+  "dependencies": {
+    "@react-three/drei": "^9.105.4",
+    "@react-three/fiber": "^8.16.2",
+    "@sanity/client": "^6.15.11",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.37.2",
+    "framer-motion": "^11.0.25",
+    "next": "14.2.3",
+    "next-intl": "^3.11.1",
+    "next-sanity": "^9.0.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sanity": "^3.37.2",
+    "styled-components": "^6.1.8",
+    "three": "^0.163.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "@types/three": "^0.163.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5"
+  }
+}

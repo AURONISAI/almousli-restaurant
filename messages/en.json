@@ -1,0 +1,174 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Almousli Restaurant - Authentic Damascus Syrian Cuisine in Sweden",
+      "description": "Experience authentic Damascus flavors in Eskilstuna. Syrian shawarma, kibbeh, fatteh, and traditional Damascene dishes. Order via Wolt & Foodora."
+    },
+    "menu": {
+      "title": "Our Menu - Authentic Damascus Dishes",
+      "description": "Explore our rich menu of authentic Syrian Damascus dishes - shawarma, grills, appetizers and special plates"
+    },
+    "about": {
+      "title": "About Almousli Restaurant - A Story from Damascus",
+      "description": "Learn our story and how we bring the rich heritage of Damascus cuisine to Sweden with authenticity and love"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "about": "About Us",
+    "order": "Order",
+    "catering": "Catering",
+    "gallery": "Gallery",
+    "findUs": "Find Us"
+  },
+  "hero": {
+    "title": "From the Heart of Damascus to Sweden",
+    "subtitle": "Authentic Syrian culinary heritage - Time-honored flavors and Damascene hospitality",
+    "orderWolt": "Order on Wolt",
+    "orderFoodora": "Order on Foodora",
+    "callWhatsApp": "Call / WhatsApp"
+  },
+  "signatureDishes": {
+    "title": "Authentic Damascus Specialties",
+    "halal": "Halal",
+    "shawarma": {
+      "title": "Damascus Shawarma",
+      "description": "Traditional Damascene shawarma with our secret spice blend and fresh garlic sauce"
+    },
+    "kibbeh": {
+      "title": "Syrian Kibbeh",
+      "description": "Crispy fried kibbeh filled with spiced meat, onions and pine nuts - Damascus style"
+    },
+    "fatteh": {
+      "title": "Damascus Fatteh",
+      "description": "Layered dish with yogurt, chickpeas, crispy bread and toasted pine nuts - a Damascene classic"
+    }
+  },
+  "delivery": {
+    "title": "Order for Delivery or Pickup",
+    "subtitle": "Available on your favorite delivery platforms",
+    "orderNow": "Order Now",
+    "callDirect": "Call to Order Directly"
+  },
+  "findUs": {
+    "title": "Come Visit Us",
+    "address": "Careliigatan 9, 632 19 Eskilstuna",
+    "phone": "Phone",
+    "hours": "Opening Hours",
+    "openingHours": {
+      "sunday": "Sunday: 10:30 - 21:00",
+      "mondayToThursday": "Monday - Thursday: 10:00 - 21:00",
+      "fridaySaturday": "Friday - Saturday: 10:00 - 22:00"
+    }
+  },
+  "footer": {
+    "about": "About",
+    "aboutText": "Almousli Restaurang has been serving the best Middle Eastern cuisine in Eskilstuna since our founding.",
+    "contact": "Contact",
+    "followUs": "Follow Us",
+    "rights": "© 2024 Almousli Restaurang. All rights reserved."
+  },
+  "common": {
+    "halal": "Halal",
+    "sek": "SEK",
+    "viewMenu": "View Menu",
+    "orderNow": "Order Now"
+  },
+  "menu": {
+    "title": "Our Menu",
+    "subtitle": "A journey through authentic Damascus flavors - each dish tells a story from our rich heritage",
+    "categories": {
+      "shawarma": "Damascus Shawarma",
+      "grills": "Levantine Grills",
+      "appetizers": "Traditional Appetizers",
+      "specialties": "Our Specialties"
+    },
+    "items": {
+      "classic": {
+        "name": "Classic Beef Shawarma",
+        "description": "Tender beef shawarma with tahini sauce, garlic and fresh vegetables"
+      },
+      "chicken": {
+        "name": "Chicken Shawarma",
+        "description": "Grilled chicken with Damascus spices, garlic sauce and pickles"
+      },
+      "mixed": {
+        "name": "Mixed Shawarma",
+        "description": "Perfect blend of beef and chicken with unforgettable flavor"
+      },
+      "mixedGrill": {
+        "name": "Mixed Grill",
+        "description": "Kebab, shish tawook, grilled kofta with rice and salads"
+      },
+      "kebab": {
+        "name": "Aleppo Kebab",
+        "description": "Ground meat seasoned with parsley and onions, charcoal grilled"
+      },
+      "grilledChicken": {
+        "name": "Shish Tawook",
+        "description": "Chicken breast marinated in lemon and garlic, grilled to perfection"
+      },
+      "kibbeh": {
+        "name": "Fried Kibbeh",
+        "description": "Bulgur stuffed with ground meat, pine nuts and Levantine spices"
+      },
+      "falafel": {
+        "name": "Falafel",
+        "description": "Golden fried chickpea patties with tahini and vegetables"
+      },
+      "hummus": {
+        "name": "Hummus with Tahini",
+        "description": "Creamy smooth hummus with olive oil and pine nuts"
+      },
+      "baba": {
+        "name": "Baba Ghanouj",
+        "description": "Grilled eggplant with tahini, garlic and lemon juice"
+      },
+      "fatteh": {
+        "name": "Damascus Fatteh",
+        "description": "Crispy bread with chickpeas, yogurt and toasted pine nuts"
+      },
+      "mansaf": {
+        "name": "Levantine Mansaf",
+        "description": "Lamb cooked in yogurt sauce on a bed of rice and bread"
+      },
+      "mahashi": {
+        "name": "Stuffed Grape Leaves",
+        "description": "Grape leaves stuffed with rice, meat and Levantine spices"
+      }
+    },
+    "note": "All our dishes are halal and prepared daily with fresh ingredients ✦ Full menus and prices available upon ordering"
+  },
+  "about": {
+    "title": "Our Story",
+    "subtitle": "From the ancient streets of Damascus to the heart of Sweden",
+    "story": {
+      "title": "Family Heritage and Damascus Authenticity",
+      "text": "Almousli Restaurant is more than just a restaurant - it's a piece of Damascus in Sweden. Our journey began with a simple dream: to share the flavors of our childhood and our family heritage with everyone here in Eskilstuna.\n\nEvery recipe we serve carries memories of Damascus's ancient alleys, family laughter around the dinner table, and the secret spices passed down through generations. We cook the way our grandmothers taught us - with patience, with love, and with deep respect for the ingredients.\n\nFrom our secret shawarma blend to the way we roll grape leaves, every detail in our restaurant reflects Damascus authenticity and warm Levantine hospitality."
+    },
+    "values": {
+      "title": "Our Values",
+      "authenticity": {
+        "title": "Authenticity",
+        "text": "We use traditional recipes and original spices to ensure the true taste of Damascus"
+      },
+      "quality": {
+        "title": "Quality",
+        "text": "Fresh ingredients daily, certified halal meats, and healthy vegetable oils"
+      },
+      "hospitality": {
+        "title": "Hospitality",
+        "text": "Levantine hospitality - we welcome you as if you were guests in our homes"
+      },
+      "community": {
+        "title": "Community",
+        "text": "We're proud to serve Eskilstuna's diverse community and build cultural bridges through food"
+      }
+    },
+    "chef": {
+      "title": "Our Chef",
+      "text": "Our kitchen is led by a Syrian chef with 20 years of experience, who learned the art of Damascus cooking in the finest restaurants of the Levant."
+    }
+  }
+}

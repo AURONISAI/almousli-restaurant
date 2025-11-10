@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --charcoal: #1A1A1A;
+    --damascus: #1B4B7F;
+    --spice: #C94A3D;
+    --gold: #DAA520;
+    --cream: #F8F6F0;
+    --copper: #B87333;
+    --emerald: #00796B;
+    --jasmine: #FEFAF0;
+  }
+
+  * {
+    @apply border-charcoal;
+  }
+
+  body {
+    @apply bg-jasmine text-charcoal;
+  }
+
+  /* RTL Support */
+  [dir="rtl"] {
+    direction: rtl;
+  }
+
+  [dir="ltr"] {
+    direction: ltr;
+  }
+
+  /* Scrollbar styling for Damascus theme */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1A1A1A;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #DAA520, #B87333);
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #FFD700, #DAA520);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-damascus text-jasmine px-8 py-4 rounded-xl font-bold hover:bg-damascus/90 transition-all duration-300 shadow-2xl hover:shadow-gold/50 border-2 border-gold/30 hover:border-gold transform hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply bg-gold text-damascus px-8 py-4 rounded-xl font-bold hover:bg-gold/90 transition-all duration-300 shadow-xl border-2 border-damascus/30 hover:border-damascus transform hover:scale-105;
+  }
+
+  .btn-outline {
+    @apply border-2 border-gold text-gold px-8 py-4 rounded-xl font-bold hover:bg-gold hover:text-damascus transition-all duration-300 shadow-lg hover:shadow-xl;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 px-4 md:px-8;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  /* Damascus decorative elements */
+  .damascus-divider {
+    @apply flex items-center justify-center gap-3 my-8;
+  }
+
+  .damascus-divider::before,
+  .damascus-divider::after {
+    content: '';
+    @apply flex-1 h-0.5 bg-gradient-to-r from-transparent via-gold to-transparent;
+  }
+}
+

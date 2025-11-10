@@ -1,0 +1,79 @@
+﻿================================================
+  ALMOUSLI RESTAURANT - QUICK START GUIDE
+================================================
+
+Package Contents: Production-ready Next.js website
+Size: 11.74 MB (without node_modules)
+Languages: Arabic, English, Swedish
+Pages: 26 routes (9 pages  3 languages)
+
+================================================
+  DEPLOYMENT STEPS
+================================================
+
+1. Extract this folder on your server
+
+2. Install dependencies:
+   npm install --production
+
+3. Start the server:
+   npm start
+
+The website will run on PORT 3000
+
+================================================
+  FOR ONE.COM HOSTING
+================================================
+
+1. Upload via FTP to your web directory
+2. Extract the zip file
+3. In cPanel > Node.js Application:
+   - App Root: /path/to/this/folder
+   - Startup File: node_modules/next/dist/bin/next
+   - Arguments: start
+4. Click 'Restart'
+
+================================================
+  WHAT'S INCLUDED
+================================================
+
+ All navigation buttons working
+ About page with Navigation/Footer  
+ Performance optimized (fast loading)
+ Complete menu (13 Damascus dishes)
+ Legendary About Us page
+ All pages in 3 languages
+
+================================================
+  ENVIRONMENT VARIABLES (Optional)
+================================================
+
+Create .env.local file with:
+
+NEXT_PUBLIC_PHONE=0737330513
+NEXT_PUBLIC_SITE_URL=https://your-domain.com
+NEXT_PUBLIC_HERO_VIDEO=/videos/hero-background.mp4
+
+================================================
+  TROUBLESHOOTING
+================================================
+
+Site won't start?
+- Check Node.js version (must be 18+)
+- Run: npm install --production
+
+Port already in use?
+- Edit package.json, change port in start script
+- Or use: PORT=8080 npm start
+
+================================================
+
+For detailed instructions, see:
+- README.md
+- DEPLOYMENT-SIMPLE.md  
+- DEPLOYMENT-COMPLETE.md
+
+Built with Damascus soul 
+November 6, 2025
+
+================================================

@@ -1,0 +1,174 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Almousli Restaurang - Autentisk Damaskus Syrisk Mat i Sverige",
+      "description": "Upplev autentiska Damaskus-smaker i Eskilstuna. Syrisk shawarma, kibbeh, fatteh och traditionella damaskusrätter. Beställ via Wolt & Foodora."
+    },
+    "menu": {
+      "title": "Vår Meny - Autentiska Damaskus Rätter",
+      "description": "Utforska vår rika meny med autentiska syriska damaskusrätter - shawarma, grillade rätter, förrätter och specialiteter"
+    },
+    "about": {
+      "title": "Om Almousli Restaurang - En Berättelse från Damaskus",
+      "description": "Lär känna vår historia och hur vi för det rika arvet från Damaskus matkultur till Sverige med äkthet och kärlek"
+    }
+  },
+  "nav": {
+    "home": "Hem",
+    "menu": "Meny",
+    "about": "Om Oss",
+    "order": "Beställ",
+    "catering": "Catering",
+    "gallery": "Galleri",
+    "findUs": "Hitta Oss"
+  },
+  "hero": {
+    "title": "Från Damaskus Hjärta till Sverige",
+    "subtitle": "Autentiskt syriskt kulinariskt arv - Tidlösa smaker och damaskensk gästfrihet",
+    "orderWolt": "Beställ på Wolt",
+    "orderFoodora": "Beställ på Foodora",
+    "callWhatsApp": "Ring / WhatsApp"
+  },
+  "signatureDishes": {
+    "title": "Äkta Damaskus Specialiteter",
+    "halal": "Halal",
+    "shawarma": {
+      "title": "Damaskus Shawarma",
+      "description": "Traditionell damaskensk shawarma med vår hemliga kryddblandning och färsk vitlökssås"
+    },
+    "kibbeh": {
+      "title": "Syrisk Kibbeh",
+      "description": "Krispig stekt kibbeh fylld med kryddat kött, lök och pinjenötter - Damaskus stil"
+    },
+    "fatteh": {
+      "title": "Damaskus Fatteh",
+      "description": "Skiktad rätt med yoghurt, kikärtor, krispigt bröd och rostade pinjenötter - en damaskensk klassiker"
+    }
+  },
+  "delivery": {
+    "title": "Beställ för Leverans eller Avhämtning",
+    "subtitle": "Tillgänglig på dina favoritplattformar",
+    "orderNow": "Beställ Nu",
+    "callDirect": "Ring för Direktbeställning"
+  },
+  "findUs": {
+    "title": "Kom och besök oss",
+    "address": "Careliigatan 9, 632 19 Eskilstuna",
+    "phone": "Telefon",
+    "hours": "Öppettider",
+    "openingHours": {
+      "sunday": "Söndag: 10:30 - 21:00",
+      "mondayToThursday": "Måndag - Torsdag: 10:00 - 21:00",
+      "fridaySaturday": "Fredag - Lördag: 10:00 - 22:00"
+    }
+  },
+  "footer": {
+    "about": "Om oss",
+    "aboutText": "Almousli Restaurang har serverat den bästa mellanöstern maten i Eskilstuna sedan vår grundande.",
+    "contact": "Kontakt",
+    "followUs": "Följ oss",
+    "rights": "© 2024 Almousli Restaurang. Alla rättigheter förbehållna."
+  },
+  "common": {
+    "halal": "Halal",
+    "sek": "SEK",
+    "viewMenu": "Se Menyn",
+    "orderNow": "Beställ Nu"
+  },
+  "menu": {
+    "title": "Vår Meny",
+    "subtitle": "En resa genom autentiska Damaskus-smaker - varje rätt berättar en historia från vårt rika arv",
+    "categories": {
+      "shawarma": "Damaskus Shawarma",
+      "grills": "Levantinska Grillrätter",
+      "appetizers": "Traditionella Förrätter",
+      "specialties": "Våra Specialiteter"
+    },
+    "items": {
+      "classic": {
+        "name": "Klassisk Nötkötts Shawarma",
+        "description": "Mör nötkötts shawarma med tahini-sås, vitlök och färska grönsaker"
+      },
+      "chicken": {
+        "name": "Kyckling Shawarma",
+        "description": "Grillad kyckling med Damaskus kryddor, vitlökssås och pickles"
+      },
+      "mixed": {
+        "name": "Blandad Shawarma",
+        "description": "Perfekt blandning av nötkött och kyckling med oförglömlig smak"
+      },
+      "mixedGrill": {
+        "name": "Blandad Grill",
+        "description": "Kebab, shish tawook, grillad kofta med ris och sallader"
+      },
+      "kebab": {
+        "name": "Aleppo Kebab",
+        "description": "Malet kött kryddat med persilja och lök, kolgrillat"
+      },
+      "grilledChicken": {
+        "name": "Shish Tawook",
+        "description": "Kycklingbröst marinerad i citron och vitlök, grillad till perfektion"
+      },
+      "kibbeh": {
+        "name": "Stekt Kibbeh",
+        "description": "Bulgur fylld med malet kött, pinjenötter och levantinska kryddor"
+      },
+      "falafel": {
+        "name": "Falafel",
+        "description": "Gyllene friterade kikärtsbiffar med tahini och grönsaker"
+      },
+      "hummus": {
+        "name": "Hummus med Tahini",
+        "description": "Krämig slät hummus med olivolja och pinjenötter"
+      },
+      "baba": {
+        "name": "Baba Ghanouj",
+        "description": "Grillad aubergine med tahini, vitlök och citronsaft"
+      },
+      "fatteh": {
+        "name": "Damaskus Fatteh",
+        "description": "Krispigt bröd med kikärtor, yoghurt och rostade pinjenötter"
+      },
+      "mansaf": {
+        "name": "Levantinsk Mansaf",
+        "description": "Lamm tillagat i yoghurtsås på en bädd av ris och bröd"
+      },
+      "mahashi": {
+        "name": "Fyllda Vinblad",
+        "description": "Vinblad fyllda med ris, kött och levantinska kryddor"
+      }
+    },
+    "note": "Alla våra rätter är halal och tillagas dagligen med färska ingredienser ✦ Fullständiga menyer och priser finns vid beställning"
+  },
+  "about": {
+    "title": "Vår Berättelse",
+    "subtitle": "Från Damaskus urgamla gator till hjärtat av Sverige",
+    "story": {
+      "title": "Familjetraditionen och Damaskus Äkthet",
+      "text": "Almousli Restaurang är mer än bara en restaurang - det är en bit av Damaskus i Sverige. Vår resa började med en enkel dröm: att dela smakerna från vår barndom och vårt familjearv med alla här i Eskilstuna.\n\nVarje recept vi serverar bär minnen från Damaskus gamla gränder, familjens skratt runt matbordet och hemliga kryddor som gått i arv genom generationer. Vi lagar mat på det sätt våra mormödrar lärde oss - med tålamod, med kärlek och med djup respekt för ingredienserna.\n\nFrån vår hemliga shawarma-blandning till hur vi rullar vinblad, varje detalj i vår restaurang speglar Damaskus äkthet och varm levantinsk gästfrihet."
+    },
+    "values": {
+      "title": "Våra Värderingar",
+      "authenticity": {
+        "title": "Äkthet",
+        "text": "Vi använder traditionella recept och äkta kryddor för att säkerställa den sanna smaken av Damaskus"
+      },
+      "quality": {
+        "title": "Kvalitet",
+        "text": "Färska ingredienser dagligen, certifierat halal-kött och hälsosamma vegetabiliska oljor"
+      },
+      "hospitality": {
+        "title": "Gästfrihet",
+        "text": "Levantinsk gästfrihet - vi välkomnar dig som om du vore gäst i vårt hem"
+      },
+      "community": {
+        "title": "Gemenskap",
+        "text": "Vi är stolta över att tjäna Eskilstunas mångfaldiga gemenskap och bygga kulturella broar genom mat"
+      }
+    },
+    "chef": {
+      "title": "Vår Kock",
+      "text": "Vårt kök leds av en syrisk kock med 20 års erfarenhet, som lärde sig konsten att laga Damaskus-mat i de finaste restaurangerna i Levanten."
+    }
+  }
+}
