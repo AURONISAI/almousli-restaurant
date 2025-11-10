@@ -1,10 +1,10 @@
 {
   "functions": {
     "src/app/**/*.js": {
-      "runtime": "@vercel/node"
+      "runtime": "nodejs18.x"
     },
     "src/app/**/*.ts": {
-      "runtime": "@vercel/node"
+      "runtime": "nodejs18.x"
     }
   }
 }
