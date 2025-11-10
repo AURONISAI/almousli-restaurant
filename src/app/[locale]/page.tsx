@@ -8,11 +8,10 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 export async function generateMetadata({
-  params
+  params: { locale }
 }: {
-  params: Promise<{ locale: string }>
+  params: { locale: string }
 }): Promise<Metadata> {
-  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'metadata' });
 
   return {

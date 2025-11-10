@@ -4,11 +4,10 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 export async function generateMetadata({
-  params
+  params: { locale }
 }: {
-  params: Promise<{ locale: string }>
+  params: { locale: string }
 }): Promise<Metadata> {
-  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'metadata' });
 
   return {
@@ -18,11 +17,10 @@ export async function generateMetadata({
 }
 
 export default async function MenuPage({
-  params
+  params: { locale }
 }: {
-  params: Promise<{ locale: string }>
+  params: { locale: string }
 }) {
-  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'menu' });
 
   const categories = [
