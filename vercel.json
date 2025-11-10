@@ -1,9 +1,14 @@
-{
-  "functions": {
-    "src/app/**/*.js": {
-      "runtime": "nodejs18.x"
-    },
-    "src/app/**/*.ts": {
+{{
+
+  "buildCommand": "npm run build",  "functions": {
+
+  "outputDirectory": ".next",    "src/app/**/*.js": {
+
+  "framework": "nextjs",      "runtime": "nodejs18.x"
+
+  "regions": ["fra1"]    },
+
+}    "src/app/**/*.ts": {
       "runtime": "nodejs18.x"
     }
   }
