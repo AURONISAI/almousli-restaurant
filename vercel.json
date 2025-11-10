@@ -1,15 +1,6 @@
 {{
-
-  "buildCommand": "npm run build",  "functions": {
-
-  "outputDirectory": ".next",    "src/app/**/*.js": {
-
-  "framework": "nextjs",      "runtime": "nodejs18.x"
-
-  "regions": ["fra1"]    },
-
-}    "src/app/**/*.ts": {
-      "runtime": "nodejs18.x"
-    }
-  }
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "regions": ["fra1"]
 }
