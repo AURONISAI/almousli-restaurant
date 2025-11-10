@@ -1,6 +1,6 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "out",
-  "framework": null,
+  "outputDirectory": ".next",
+  "framework": "nextjs",
   "regions": ["fra1"]
 }
