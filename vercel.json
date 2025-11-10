@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "src/app/**/*.js": {
+      "runtime": "@vercel/node"
+    },
+    "src/app/**/*.ts": {
+      "runtime": "@vercel/node"
+    }
+  }
+}
