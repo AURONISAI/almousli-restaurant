@@ -12,13 +12,13 @@ const deliveryPartners = [
   },
   {
     name: 'Foodora',
-    url: 'https://www.foodora.se/restaurant/almousli',
+    url: 'https://www.foodora.se/en/restaurant/s6ky/almousli',
     color: '#d61c5c',
     logo: 'F',
   },
   {
     name: 'Uber Eats',
-    url: 'https://www.ubereats.com/se/store/almousli',
+    url: 'https://www.ubereats.com/se/store/almousli/3i23g4g',
     color: '#06c167',
     logo: 'U',
   },
@@ -81,11 +81,11 @@ export default function DeliveryPartners() {
           className="text-center mt-12"
         >
           <a
-            href={`tel:${process.env.NEXT_PUBLIC_PHONE}`}
+            href="https://wa.me/46765916851"
             className="btn-secondary inline-flex items-center gap-3"
           >
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+              <path d="M12.04 2.01A10.01 10.01 0 0 0 2.03 12.05a10.01 10.01 0 0 0 10.01 10.01 10.01 10.01 0 0 0 10.01-10.01A10.01 10.01 0 0 0 12.04 2.01zM12.04 20.06a8.01 8.01 0 0 1-8.01-8.01 8.01 8.01 0 0 1 8.01-8.01 8.01 8.01 0 0 1 8.01 8.01 8.01 8.01 0 0 1-8.01 8.01zm2.96-5.17c-.16-.08-1.02-.5-1.18-.56s-.28-.08-.4-.08-.53.08-.64.24-.4.5-.49.6-.18.12-.34.04a4.84 4.84 0 0 1-1.45-.9 5.27 5.27 0 0 1-1-1.23c-.1-.16-.01-.25.07-.33.07-.07.16-.18.24-.27.08-.09.12-.16.18-.27.06-.11.03-.2-.01-.28s-.4-.96-.55-1.32c-.14-.35-.28-.3-.4-.3h-.4c-.16 0-.42.06-.64.31s-.85.83-.85 2.02.87 2.34 1 2.5a6.5 6.5 0 0 0 3.41 2.9c.45.18.8.29 1.08.37.48.13.91.11 1.26-.07.39-.2.64-.53.73-.84.09-.31.09-.58.06-.66s-.15-.12-.31-.2z" />
             </svg>
             <span className="font-cairo">{t('callDirect')}</span>
           </a>
