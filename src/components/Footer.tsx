@@ -84,8 +84,8 @@ export default function Footer() {
               <li>Careliigatan 9</li>
               <li>632 19 Eskilstuna</li>
               <li>
-                <a href={`tel:${process.env.NEXT_PUBLIC_PHONE}`} className="hover:text-gold transition-colors">
-                  {process.env.NEXT_PUBLIC_PHONE || '0737330513'}
+                <a href="https://wa.me/46765916851" className="hover:text-gold transition-colors">
+                  +46 76 591 68 51
                 </a>
               </li>
               <li>

@@ -51,6 +51,8 @@ export default function StructuredData() {
       'https://www.instagram.com/almousli_restaurang',
       'https://www.facebook.com/almousli',
       'https://wolt.com/sv/swe/eskilstuna/restaurant/almousli',
+      'https://www.foodora.se/en/restaurant/s6ky/almousli',
+      'https://www.ubereats.com/se/store/almousli/3i23g4g'
     ],
   };
 

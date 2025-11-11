@@ -130,7 +130,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="https://www.foodora.se/restaurant/almousli"
+            href="https://www.foodora.se/en/restaurant/s6ky/almousli"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-spice hover:bg-spice/90 text-jasmine px-8 py-4 rounded-xl font-bold text-lg shadow-2xl hover:shadow-gold/50 transition-all duration-300 flex items-center gap-3 border-2 border-gold/30 hover:border-gold transform hover:scale-105"
