@@ -86,7 +86,7 @@ export default function FindUs() {
                   </a>
                   <div className="mt-2">
                     <a
-                      href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP || '46737330513'}`}
+                      href={`https://wa.me/46765916851`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 text-leaf hover:text-gold transition-colors"

@@ -50,9 +50,9 @@ export default function StructuredData() {
     sameAs: [
       'https://www.instagram.com/almousli_restaurang',
       'https://www.facebook.com/almousli',
-      'https://wolt.com/sv/swe/eskilstuna/restaurant/almousli',
-      'https://www.foodora.se/en/restaurant/s6ky/almousli',
-      'https://www.ubereats.com/se/store/almousli/3i23g4g'
+      'https://wolt.com/sv/swe/eskilstuna/restaurant/almousli-restaurang',
+      'https://www.foodora.se/restaurant/dlxr/almousli-restaurang',
+      'https://www.ubereats.com/se/store/almousli-restaurang/94KUlu9pXn-0m7oHRl5J5A?diningMode=DELIVERY&surfaceName=',
     ],
   };
 

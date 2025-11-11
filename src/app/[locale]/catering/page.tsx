@@ -45,7 +45,7 @@ export default function CateringPage() {
                 <div className="space-y-2">
                   <p>📞 Phone: <a href="tel:0737330513" className="text-spice hover:text-gold">0737330513</a></p>
                   <p>📧 Email: <a href="mailto:info@almousli.se" className="text-spice hover:text-gold">info@almousli.se</a></p>
-                  <p>💬 WhatsApp: <a href="https://wa.me/46737330513" className="text-spice hover:text-gold">+46 73 733 05 13</a></p>
+                  <p>💬 WhatsApp: <a href="https://wa.me/46765916851" className="text-spice hover:text-gold">+46 76 591 68 51</a></p>
                 </div>
               </div>
             </div>
