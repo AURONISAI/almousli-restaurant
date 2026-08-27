@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>En ursäkt – Almousli Restaurang, Eskilstuna</title>
-<meta name="description" content="Ett öppet brev och en ursäkt från Almousli Restaurang i Eskilstuna om våra brister i hygien, och vad vi gör åt det." />
+<title>Innan du äter ute – matsäkerhet, risker och dina rättigheter</title>
+<meta name="description" content="Allmän konsumentinformation om matsäkerhet: skadedjur, mögel, bruten kylkedja, vad du själv kan se som gäst, och hur du begär ut kontrollrapporter eller anmäler brister till kommunens miljöförvaltning." />
 <meta name="robots" content="index, follow" />
 <style>
   :root {
@@ -43,11 +43,8 @@
     );
     position: relative; z-index: 2;
   }
-  .tape.bottom { margin-top: 0; }
   .wrap { max-width: 760px; margin: 0 auto; padding: 46px 22px 80px; position: relative; z-index: 1; }
-  .langbar {
-    display: flex; gap: 8px; justify-content: flex-end; margin-bottom: 40px;
-  }
+  .langbar { display: flex; gap: 8px; justify-content: flex-end; margin-bottom: 40px; }
   .langbar button {
     background: transparent; color: var(--muted);
     border: 1px solid var(--line); border-radius: 999px;
@@ -62,7 +59,7 @@
     font-size: 13px; letter-spacing: .22em; text-transform: uppercase;
     color: var(--accent); margin-bottom: 18px;
   }
-  /* Varningsskylt ovanför rubriken */
+  [dir="rtl"] .brand { letter-spacing: 0; }
   .warnbadge {
     display: inline-flex; align-items: center; gap: 12px;
     border: 2px solid var(--accent); border-radius: 8px;
@@ -74,32 +71,7 @@
   }
   .warnbadge svg { flex: 0 0 auto; }
   [dir="rtl"] .warnbadge { letter-spacing: 0; }
-  /* Skyltar: skadedjur, mögel, smutsig kyl */
-  .signs {
-    display: grid; grid-template-columns: repeat(3, 1fr);
-    gap: 14px; margin: 34px 0 38px;
-  }
-  .sign {
-    border: 2px solid var(--accent); border-radius: 10px;
-    background: rgba(201, 162, 39, .06);
-    padding: 20px 12px 16px; text-align: center;
-  }
-  .sign svg { display: block; margin: 0 auto 12px; }
-  .sign span {
-    display: block; font-size: 12.5px; font-weight: 700;
-    letter-spacing: .1em; text-transform: uppercase; color: #f2d777;
-    line-height: 1.4;
-  }
-  [dir="rtl"] .sign span { letter-spacing: 0; text-transform: none; font-size: 14px; }
-  @media (max-width: 560px) {
-    .signs { grid-template-columns: 1fr; }
-    .sign { display: flex; align-items: center; gap: 16px; text-align: start; padding: 14px 16px; }
-    .sign svg { margin: 0; }
-  }
-  h1 {
-    font-size: clamp(30px, 6vw, 46px);
-    line-height: 1.2; margin: 0 0 28px; font-weight: 600;
-  }
+  h1 { font-size: clamp(30px, 6vw, 46px); line-height: 1.2; margin: 0 0 28px; font-weight: 600; }
   .lead { font-size: 19px; color: #d9d5ce; margin-bottom: 34px; }
   p { margin: 0 0 20px; }
   .panel {
@@ -111,15 +83,34 @@
     color: var(--accent); letter-spacing: .02em;
   }
   ul { margin: 0 0 20px; padding-inline-start: 22px; }
-  li { margin-bottom: 11px; color: #ded9d2; }
-  .sorry {
+  li { margin-bottom: 13px; color: #ded9d2; }
+  li strong { color: #fff; font-weight: 600; }
+  /* Skyltar */
+  .signs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 34px 0 38px; }
+  .sign {
+    border: 2px solid var(--accent); border-radius: 10px;
+    background: rgba(201, 162, 39, .06);
+    padding: 20px 12px 16px; text-align: center;
+  }
+  .sign svg { display: block; margin: 0 auto 12px; }
+  .sign span {
+    display: block; font-size: 12.5px; font-weight: 700;
+    letter-spacing: .1em; text-transform: uppercase; color: #f2d777; line-height: 1.4;
+  }
+  [dir="rtl"] .sign span { letter-spacing: 0; text-transform: none; font-size: 14.5px; }
+  @media (max-width: 560px) {
+    .signs { grid-template-columns: 1fr; }
+    .sign { display: flex; align-items: center; gap: 16px; text-align: start; padding: 14px 16px; }
+    .sign svg { margin: 0; }
+  }
+  .callout {
     border-inline-start: 3px solid var(--accent);
     padding-inline-start: 20px; margin: 40px 0;
     font-size: 21px; color: #fff;
   }
   .meta {
     margin-top: 56px; padding-top: 26px; border-top: 1px solid var(--line);
-    color: var(--muted); font-size: 15px;
+    color: var(--muted); font-size: 14.5px;
   }
   .meta strong { color: var(--text); font-weight: 600; }
   [hidden] { display: none !important; }
@@ -138,7 +129,7 @@
 
   <!-- ───────────── SVENSKA ───────────── -->
   <main id="sv" dir="ltr" lang="sv">
-    <div class="brand">Almousli Restaurang · Eskilstuna</div>
+    <div class="brand">Konsumentinformation · Matsäkerhet</div>
 
     <div class="warnbadge">
       <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true">
@@ -146,26 +137,24 @@
         <rect x="28.5" y="24" width="7" height="16" rx="3.5" fill="#c9a227"/>
         <circle cx="32" cy="47" r="4" fill="#c9a227"/>
       </svg>
-      Varning · dokumenterade hygienbrister
+      Varning · dålig kökshygien är en hälsorisk
     </div>
 
-    <h1>Vi ber Eskilstuna om ursäkt.</h1>
+    <h1>Innan du äter ute: det här bör du veta.</h1>
 
     <p class="lead">
-      Den här sidan har ersatt vår gamla hemsida. Vi tycker inte att vi förtjänar
-      att marknadsföra mat innan vi har sagt det här rakt ut.
+      Den här sidan är allmän information om matsäkerhet. Den handlar inte om
+      någon enskild restaurang och pekar inte ut någon verksamhet. Den finns för
+      att du ska kunna bedöma ett kök själv, veta vad du har rätt att kräva och
+      vart du vänder dig när något är fel.
     </p>
 
     <p>
-      Vår restaurang har haft allvarliga brister i hygienen. Verksamheten har
-      anmälts till miljöförvaltningen i Eskilstuna kommun flera gånger. Det har
-      förekommit skadedjur i lokalen, smutsig kyl- och frysutrustning, mögel och
-      bristande rengöringsrutiner.
-    </p>
-
-    <p>
-      Det är oacceptabelt. Vi skyller inte på någon annan, inte på personal och
-      inte på omständigheterna. Ansvaret är vårt.
+      Livsmedelsverket uppskattar att hundratusentals människor i Sverige varje
+      år blir sjuka av mat. De flesta fall anmäls aldrig, eftersom många tror
+      att de fått en vanlig magsjuka. Det är därför brister i ett kök kan
+      fortsätta år efter år utan att någon reagerar – och därför din anmälan
+      spelar roll.
     </p>
 
     <div class="signs">
@@ -176,7 +165,7 @@
           <path d="M48 40 q11 -3 8 -14" fill="none" stroke="#c9a227" stroke-width="3.5" stroke-linecap="round"/>
           <circle cx="40" cy="36" r="2.6" fill="#c9a227"/>
         </svg>
-        <span>Skadedjur<br />i lokalen</span>
+        <span>Möss och<br />råttor</span>
       </div>
       <div class="sign">
         <svg width="46" height="46" viewBox="0 0 64 64" aria-hidden="true">
@@ -195,48 +184,63 @@
           <path d="M41 13 v7 M41 31 v8" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/>
           <path d="M21 45 q4 5 8 0 t8 0" fill="none" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/>
         </svg>
-        <span>Smutsig kyl<br />och frys</span>
+        <span>Bruten<br />kylkedja</span>
       </div>
     </div>
 
     <div class="panel">
-      <h2>Vad vi gör nu</h2>
+      <h2>Vad som faktiskt gör mat farlig</h2>
       <ul>
-        <li>Professionell skadedjurssanering med löpande avtal och dokumenterade kontroller.</li>
-        <li>Kassering av allt livsmedel där vi inte kan garantera hanteringen.</li>
-        <li>Rengöring och utbyte av kyl- och frysutrustning, med temperaturloggar varje dag.</li>
-        <li>Nytt egenkontrollprogram enligt livsmedelslagstiftningen.</li>
-        <li>Hygienutbildning för all personal, med dokumenterat genomförande.</li>
-        <li>Full öppenhet mot miljöförvaltningen – de är välkomna oanmälda.</li>
+        <li><strong>Skadedjur.</strong> Möss och råttor sprider bakterier via spillning, urin och päls. Skadedjur i ett kök är inte ett städproblem – det är en smittrisk.</li>
+        <li><strong>Mögel och gammal smuts.</strong> Mögel på väggar, i kylar och i golvbrunnar visar att fukt och rengöring inte hanteras. Där finns också ofta flugor och kackerlackor.</li>
+        <li><strong>Bruten kylkedja.</strong> Kylvaror ska normalt hållas vid högst +8 °C, ofta kallare, och varmhållen mat vid minst +60 °C. Ljummen mat är precis där bakterier växer snabbast.</li>
+        <li><strong>Korskontaminering.</strong> Samma skärbräda eller kniv till rått kött och färdig mat sprider salmonella och campylobacter.</li>
+        <li><strong>Handhygien.</strong> Personal som växlar mellan pengar, sopor och mat utan att tvätta händerna är en av de vanligaste smittvägarna.</li>
       </ul>
     </div>
 
-    <div class="sorry">
-      Till våra gäster, våra grannar och till Eskilstuna kommun: förlåt.
-      Ni förtjänade bättre än det vi gav er.
+    <div class="panel">
+      <h2>Tecken du själv kan se som gäst</h2>
+      <ul>
+        <li>Smutsiga toaletter och handfat. Det som sköts slarvigt där sköts sällan bättre i köket.</li>
+        <li>Lukt av gammalt fett, avlopp eller fukt och mögel.</li>
+        <li>Kyldiskar, salladsbufféer och drickakylar som inte känns kalla.</li>
+        <li>Spillning, gnagmärken på förpackningar, flugor kring maten.</li>
+        <li>Mat som stått framme länge, ljummen och utan lock.</li>
+        <li>Du får inte se in i köket, trots att du frågar vänligt.</li>
+      </ul>
     </div>
 
-    <p>
-      Vi har öppet, och vi arbetar med åtgärderna samtidigt. Det är inte en
-      ursäkt för det som varit – det betyder att vi tar ansvar medan vi rättar
-      till det, och att ni får granska oss under tiden.
-    </p>
+    <div class="callout">
+      Ett kök med möss, mögel och ljumna kylar är inte ett dåligt betyg.
+      Det är en hälsorisk – och den enda som kan stoppa den är kommunens
+      livsmedelskontroll.
+    </div>
 
-    <p>
-      Vi kommer också att starta om under ett nytt namn. Vi återkommer med
-      information när arbetet är gjort och kontrollerat.
-    </p>
+    <div class="panel">
+      <h2>Dina rättigheter – och vad som faktiskt fungerar</h2>
+      <ul>
+        <li><strong>Kontrollrapporterna är offentliga.</strong> Kommunens livsmedelskontroll är allmän handling. Du kan begära ut de senaste inspektionsrapporterna för en restaurang från miljöförvaltningen i kommunen, även i Eskilstuna, och du behöver inte förklara varför du vill se dem.</li>
+        <li><strong>Du kan anmäla utan bevis.</strong> Har du sett brister eller blivit sjuk räcker det att du berättar vad, var och när. Miljöförvaltningen kan göra en oanmäld inspektion, förelägga om åtgärder, besluta om sanktionsavgift och i allvarliga fall stänga verksamheten.</li>
+        <li><strong>Blir du sjuk, säg var du åt.</strong> Kontakta 1177 eller din vårdcentral och berätta vad du åt och var. Utan den kopplingen syns aldrig utbrotten i statistiken.</li>
+        <li><strong>Arbetar du i ett kök?</strong> Du får påtala brister. Vänd dig till skyddsombud, Arbetsmiljöverket eller kommunens miljöförvaltning. Visselblåsarlagen (2021:890) kan ge dig skydd mot repressalier.</li>
+        <li><strong>En hemsida stoppar ingenting.</strong> Bara tillsynsmyndigheten har befogenhet att inspektera och tvinga fram åtgärder. Anmälan är vägen dit.</li>
+      </ul>
+    </div>
 
     <div class="meta">
-      <strong>Almousli Restaurang</strong><br />
-      Careliigatan 9, 632 19 Eskilstuna<br />
-      Publicerat 27 augusti 2026
+      <strong>Allmän konsumentinformation om matsäkerhet.</strong><br />
+      Sidan pekar inte ut någon enskild verksamhet. Uppgifterna om regler och
+      temperaturer bygger på svensk livsmedelslagstiftning och Livsmedelsverkets
+      vägledningar. Kontrollera alltid aktuella krav hos Livsmedelsverket eller
+      din kommun.<br />
+      Publicerat 27 augusti 2026.
     </div>
   </main>
 
-  <!-- ───────────── عربي (سوري) ───────────── -->
+  <!-- ───────────── عربي ───────────── -->
   <main id="ar" dir="rtl" lang="ar" hidden>
-    <div class="brand">مطعم الموصلي · إسكيلستونا</div>
+    <div class="brand">معلومات للمستهلك · سلامة الغذاء</div>
 
     <div class="warnbadge">
       <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true">
@@ -244,25 +248,22 @@
         <rect x="28.5" y="24" width="7" height="16" rx="3.5" fill="#c9a227"/>
         <circle cx="32" cy="47" r="4" fill="#c9a227"/>
       </svg>
-      تحذير · مخالفات نظافة موثّقة
+      تحذير · قلّة النظافة بالمطبخ خطر على الصحة
     </div>
 
-    <h1>منعتذر من أهل إسكيلستونا.</h1>
+    <h1>قبل ما تأكل برّا: لازم تعرف هالشي.</h1>
 
     <p class="lead">
-      هي الصفحة أخذت محل موقعنا القديم. ما منشوف حالنا نحكي عن أكل وإعلانات
-      قبل ما نقول هالحقيقة بصراحة.
+      هي الصفحة معلومات عامة عن سلامة الغذاء. ما إلها علاقة بمطعم معيّن ولا
+      عم تشير لأي جهة. موجودة لتعرف تقيّم المطبخ بنفسك، وتعرف شو حقّك، ولوين
+      تروح لمّا يكون في شي غلط.
     </p>
 
     <p>
-      مطعمنا كان عنده تقصير كبير بالنظافة. وتم تبليغ دائرة البيئة ببلدية
-      إسكيلستونا علينا أكثر من مرة. صار في قوارض وحشرات بالمحل، وبرادات
-      وفريزرات مو نظيفة، وعفن، وروتين تنظيف ناقص.
-    </p>
-
-    <p>
-      هاد شي غير مقبول. ما عنا حجة، ولا منرمي المسؤولية على الموظفين ولا على
-      الظروف. المسؤولية علينا نحنا.
+      دائرة الغذاء السويدية (Livsmedelsverket) تقدّر إنّو مئات الآلاف بالسويد
+      كل سنة يمرضوا من الأكل. ومعظم الحالات ما تنبلّغ، لأنّ الناس تحسب إنّها
+      نزلة معوية عادية. لهيك المخالفات بالمطابخ تكمّل سنين بلا ما حد يتحرّك —
+      ولهيك تبليغك مهم.
     </p>
 
     <div class="signs">
@@ -273,7 +274,7 @@
           <path d="M48 40 q11 -3 8 -14" fill="none" stroke="#c9a227" stroke-width="3.5" stroke-linecap="round"/>
           <circle cx="40" cy="36" r="2.6" fill="#c9a227"/>
         </svg>
-        <span>قوارض بالمحل</span>
+        <span>فيران وجرذان</span>
       </div>
       <div class="sign">
         <svg width="46" height="46" viewBox="0 0 64 64" aria-hidden="true">
@@ -292,42 +293,55 @@
           <path d="M41 13 v7 M41 31 v8" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/>
           <path d="M21 45 q4 5 8 0 t8 0" fill="none" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/>
         </svg>
-        <span>برادات مو نظيفة</span>
+        <span>كسر سلسلة التبريد</span>
       </div>
     </div>
 
     <div class="panel">
-      <h2>شو عم نعمل هلّق</h2>
+      <h2>شو يلي فعلاً يخلّي الأكل خطر</h2>
       <ul>
-        <li>مكافحة قوارض وحشرات مع شركة مختصة، وعقد مستمر وتقارير موثّقة.</li>
-        <li>رمي كل مادة غذائية ما فينا نضمن طريقة تخزينها.</li>
-        <li>تنظيف وتبديل البرادات والفريزرات، وتسجيل درجات الحرارة كل يوم.</li>
-        <li>نظام رقابة داخلية جديد حسب قانون الغذاء السويدي.</li>
-        <li>تدريب نظافة لكل الموظفين، وموثّق إنّو صار.</li>
-        <li>شفافية كاملة مع دائرة البيئة — أهلاً بيهم بأي وقت وبلا موعد.</li>
+        <li><strong>القوارض.</strong> الفيران والجرذان تنقل بكتيريا بالبعر والبول والوبر. وجودها بالمطبخ ما هو مشكلة نظافة — هي خطر عدوى.</li>
+        <li><strong>العفن والوسخ القديم.</strong> عفن على الحيط أو بالبرادات أو بمصارف الأرض معناه إنّ الرطوبة والتنظيف مو مضبوطين. وعادة يجي معه ذبان وحشرات.</li>
+        <li><strong>كسر سلسلة التبريد.</strong> المواد المبرّدة لازم تكون عادةً بحد أقصى +8 مئوية، وغالباً أبرد، والأكل السخن على الأقل +60 مئوية. الأكل الفاتر هو بالضبط وين تكبر البكتيريا أسرع.</li>
+        <li><strong>التلوّث المتبادل.</strong> نفس لوح التقطيع أو السكين للحم النيّي والأكل الجاهز ينقل السالمونيلا والكامبيلوباكتر.</li>
+        <li><strong>نظافة الإيدين.</strong> موظف يمسك مصاري وزبالة وأكل بلا ما يغسل إيديه — من أكتر طرق نقل العدوى.</li>
       </ul>
     </div>
 
-    <div class="sorry">
-      لزباينا، لجيرانّا، ولبلدية إسكيلستونا: نعتذر.
-      كنتوا تستاهلوا أحسن من يلي قدّمناه.
+    <div class="panel">
+      <h2>علامات فيك تشوفها كزبون</h2>
+      <ul>
+        <li>حمّامات ومغاسل مو نظيفة. يلي مهمل هونيك، نادراً يكون أحسن بالمطبخ.</li>
+        <li>ريحة زيت قديم، أو مجاري، أو رطوبة وعفن.</li>
+        <li>برادات وبوفيه سلطات وبرادات مشروبات ما تحسّها باردة.</li>
+        <li>بعر قوارض، أثر عض على العلب، ذبان حوالي الأكل.</li>
+        <li>أكل واقف مكشوف من وقت طويل وفاتر.</li>
+        <li>ما يخلّوك تشوف المطبخ، ولو سألت بأدب.</li>
+      </ul>
     </div>
 
-    <p>
-      نحنا فاتحين، وعم نشتغل على التصحيح بنفس الوقت. هاد ما إله معنى إنّو
-      يلي صار صار — معناه إنّنا عم نتحمّل المسؤولية ونحنا عم نصلّح، وإنتو
-      إلكم الحق تراقبونا خلال هالفترة.
-    </p>
+    <div class="callout">
+      مطبخ فيه فيران وعفن وبرادات فاترة ما هو «تقييم سيّئ».
+      هو خطر على الصحة — والوحيد يلي يقدر يوقفه هو رقابة الغذاء بالبلدية.
+    </div>
 
-    <p>
-      وكمان رح نبلّش من جديد باسم جديد، ورح نخبركم لمّا يخلص الشغل ويصير
-      مراقَب.
-    </p>
+    <div class="panel">
+      <h2>حقوقك — وشو يلي فعلاً بينفع</h2>
+      <ul>
+        <li><strong>تقارير الرقابة عامة.</strong> رقابة الغذاء بالبلدية وثيقة عامة. فيك تطلب آخر تقارير التفتيش لأي مطعم من دائرة البيئة بالبلدية، بما فيها إسكيلستونا، وما لازم تشرح ليش.</li>
+        <li><strong>فيك تبلّغ بلا أدلّة.</strong> إذا شفت مخالفات أو مرضت، يكفي تحكي شو وأين وإيمتى. البلدية فيها تعمل تفتيش بلا موعد، وتفرض إجراءات، وتحكم برسوم عقابية، وبالحالات الخطيرة تسكّر المكان.</li>
+        <li><strong>إذا مرضت، قول وين أكلت.</strong> اتصل بـ 1177 أو المركز الصحي وقول شو أكلت ووين. بلا هالربط، ما تنكشف الحالات أبداً.</li>
+        <li><strong>إذا عم تشتغل بمطبخ؟</strong> من حقّك تحكي عن المخالفات: مندوب السلامة، أو Arbetsmiljöverket، أو دائرة البيئة بالبلدية. وقانون المبلّغين (2021:890) فيه يحميك من الانتقام.</li>
+        <li><strong>الموقع الإلكتروني ما يوقف شي.</strong> بس جهة الرقابة عندها صلاحية التفتيش وفرض الإجراءات. التبليغ هو الطريق.</li>
+      </ul>
+    </div>
 
     <div class="meta">
-      <strong>مطعم الموصلي</strong><br />
-      Careliigatan 9, 632 19 Eskilstuna<br />
-      نُشر في 27 آب 2026
+      <strong>معلومات عامة للمستهلك عن سلامة الغذاء.</strong><br />
+      هي الصفحة ما عم تشير لأي جهة معيّنة. المعلومات عن القوانين ودرجات
+      الحرارة مبنية على قانون الغذاء السويدي وإرشادات Livsmedelsverket. تأكّد
+      دايماً من المتطلبات الحالية عند Livsmedelsverket أو بلديتك.<br />
+      نُشر في 27 آب 2026.
     </div>
   </main>
 
