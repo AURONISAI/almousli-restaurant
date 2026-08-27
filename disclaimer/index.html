@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>En ursäkt – Almousli Restaurang, Eskilstuna</title>
+<meta name="description" content="Ett öppet brev och en ursäkt från Almousli Restaurang i Eskilstuna om våra brister i hygien, och vad vi gör åt det." />
+<meta name="robots" content="index, follow" />
+<style>
+  :root {
+    --bg: #0e0f11;
+    --panel: #16181c;
+    --line: #2a2e35;
+    --text: #ece9e4;
+    --muted: #9aa1ab;
+    --accent: #c9a227;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 22px 90px; }
+  .langbar {
+    display: flex; gap: 8px; justify-content: flex-end; margin-bottom: 40px;
+  }
+  .langbar button {
+    background: transparent; color: var(--muted);
+    border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; cursor: pointer;
+    font-family: inherit; transition: all .15s ease;
+  }
+  .langbar button:hover { color: var(--text); border-color: #444a54; }
+  .langbar button[aria-pressed="true"] {
+    background: var(--accent); color: #14150f; border-color: var(--accent); font-weight: 600;
+  }
+  .brand {
+    font-size: 13px; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 18px;
+  }
+  h1 {
+    font-size: clamp(30px, 6vw, 46px);
+    line-height: 1.2; margin: 0 0 28px; font-weight: 600;
+  }
+  .lead { font-size: 19px; color: #d9d5ce; margin-bottom: 34px; }
+  p { margin: 0 0 20px; }
+  .panel {
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: 12px; padding: 26px 26px 10px; margin: 34px 0;
+  }
+  h2 {
+    font-size: 19px; margin: 0 0 18px; font-weight: 600;
+    color: var(--accent); letter-spacing: .02em;
+  }
+  ul { margin: 0 0 20px; padding-inline-start: 22px; }
+  li { margin-bottom: 11px; color: #ded9d2; }
+  .sorry {
+    border-inline-start: 3px solid var(--accent);
+    padding-inline-start: 20px; margin: 40px 0;
+    font-size: 21px; color: #fff;
+  }
+  .meta {
+    margin-top: 56px; padding-top: 26px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 15px;
+  }
+  .meta strong { color: var(--text); font-weight: 600; }
+  [hidden] { display: none !important; }
+  [dir="rtl"] { font-family: "Segoe UI", Tahoma, "Traditional Arabic", serif; }
+  [dir="rtl"] h1, [dir="rtl"] .lead { letter-spacing: 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="langbar" role="group" aria-label="Språk / اللغة">
+    <button type="button" data-lang="sv" aria-pressed="true">Svenska</button>
+    <button type="button" data-lang="ar" aria-pressed="false">عربي</button>
+  </div>
+
+  <!-- ───────────── SVENSKA ───────────── -->
+  <main id="sv" dir="ltr" lang="sv">
+    <div class="brand">Almousli Restaurang · Eskilstuna</div>
+
+    <h1>Vi ber Eskilstuna om ursäkt.</h1>
+
+    <p class="lead">
+      Den här sidan har ersatt vår gamla hemsida. Vi tycker inte att vi förtjänar
+      att marknadsföra mat innan vi har sagt det här rakt ut.
+    </p>
+
+    <p>
+      Vår restaurang har haft allvarliga brister i hygienen. Verksamheten har
+      anmälts till miljöförvaltningen i Eskilstuna kommun flera gånger. Det har
+      förekommit skadedjur i lokalen, smutsig kyl- och frysutrustning, mögel och
+      bristande rengöringsrutiner.
+    </p>
+
+    <p>
+      Det är oacceptabelt. Vi skyller inte på någon annan, inte på personal och
+      inte på omständigheterna. Ansvaret är vårt.
+    </p>
+
+    <div class="panel">
+      <h2>Vad vi gör nu</h2>
+      <ul>
+        <li>Professionell skadedjurssanering med löpande avtal och dokumenterade kontroller.</li>
+        <li>Kassering av allt livsmedel där vi inte kan garantera hanteringen.</li>
+        <li>Rengöring och utbyte av kyl- och frysutrustning, med temperaturloggar varje dag.</li>
+        <li>Nytt egenkontrollprogram enligt livsmedelslagstiftningen.</li>
+        <li>Hygienutbildning för all personal innan vi lagar mat igen.</li>
+        <li>Full öppenhet mot miljöförvaltningen – de är välkomna oanmälda.</li>
+      </ul>
+    </div>
+
+    <div class="sorry">
+      Till våra gäster, våra grannar och till Eskilstuna kommun: förlåt.
+      Ni förtjänade bättre än det vi gav er.
+    </div>
+
+    <p>
+      Vi har öppet, och vi arbetar med åtgärderna samtidigt. Det är inte en
+      ursäkt för det som varit – det betyder att vi tar ansvar medan vi rättar
+      till det, och att ni får granska oss under tiden.
+    </p>
+
+    <p>
+      Vi kommer också att starta om under ett nytt namn. Vi återkommer med
+      information när arbetet är gjort och kontrollerat.
+    </p>
+
+    <div class="meta">
+      <strong>Almousli Restaurang</strong><br />
+      Careliigatan 9, 632 19 Eskilstuna<br />
+      Publicerat 27 augusti 2026
+    </div>
+  </main>
+
+  <!-- ───────────── عربي (سوري) ───────────── -->
+  <main id="ar" dir="rtl" lang="ar" hidden>
+    <div class="brand">مطعم الموصلي · إسكيلستونا</div>
+
+    <h1>منعتذر من أهل إسكيلستونا.</h1>
+
+    <p class="lead">
+      هي الصفحة أخذت محل موقعنا القديم. ما منشوف حالنا نحكي عن أكل وإعلانات
+      قبل ما نقول هالحقيقة بصراحة.
+    </p>
+
+    <p>
+      مطعمنا كان عنده تقصير كبير بالنظافة. وتم تبليغ دائرة البيئة ببلدية
+      إسكيلستونا علينا أكثر من مرة. صار في قوارض وحشرات بالمحل، وبرادات
+      وفريزرات مو نظيفة، وعفن، وروتين تنظيف ناقص.
+    </p>
+
+    <p>
+      هاد شي غير مقبول. ما عنا حجة، ولا منرمي المسؤولية على الموظفين ولا على
+      الظروف. المسؤولية علينا نحنا.
+    </p>
+
+    <div class="panel">
+      <h2>شو عم نعمل هلّق</h2>
+      <ul>
+        <li>مكافحة قوارض وحشرات مع شركة مختصة، وعقد مستمر وتقارير موثّقة.</li>
+        <li>رمي كل مادة غذائية ما فينا نضمن طريقة تخزينها.</li>
+        <li>تنظيف وتبديل البرادات والفريزرات، وتسجيل درجات الحرارة كل يوم.</li>
+        <li>نظام رقابة داخلية جديد حسب قانون الغذاء السويدي.</li>
+        <li>تدريب نظافة لكل الموظفين قبل ما نرجّع نطبخ.</li>
+        <li>شفافية كاملة مع دائرة البيئة — أهلاً بيهم بأي وقت وبلا موعد.</li>
+      </ul>
+    </div>
+
+    <div class="sorry">
+      لزباينا، لجيرانّا، ولبلدية إسكيلستونا: نعتذر.
+      كنتوا تستاهلوا أحسن من يلي قدّمناه.
+    </div>
+
+    <p>
+      نحنا فاتحين، وعم نشتغل على التصحيح بنفس الوقت. هاد ما إله معنى إنّو
+      يلي صار صار — معناه إنّنا عم نتحمّل المسؤولية ونحنا عم نصلّح، وإنتو
+      إلكم الحق تراقبونا خلال هالفترة.
+    </p>
+
+    <p>
+      وكمان رح نبلّش من جديد باسم جديد، ورح نخبركم لمّا يخلص الشغل ويصير
+      مراقَب.
+    </p>
+
+    <div class="meta">
+      <strong>مطعم الموصلي</strong><br />
+      Careliigatan 9, 632 19 Eskilstuna<br />
+      نُشر في 27 آب 2026
+    </div>
+  </main>
+
+</div>
+
+<script>
+  var buttons = document.querySelectorAll(".langbar button");
+  var panes = { sv: document.getElementById("sv"), ar: document.getElementById("ar") };
+
+  function show(lang) {
+    Object.keys(panes).forEach(function (key) {
+      panes[key].hidden = key !== lang;
+    });
+    buttons.forEach(function (btn) {
+      btn.setAttribute("aria-pressed", String(btn.dataset.lang === lang));
+    });
+    document.documentElement.lang = lang;
+  }
+
+  buttons.forEach(function (btn) {
+    btn.addEventListener("click", function () { show(btn.dataset.lang); });
+  });
+
+  if ((navigator.language || "").toLowerCase().indexOf("ar") === 0) show("ar");
+</script>
+</body>
+</html>
