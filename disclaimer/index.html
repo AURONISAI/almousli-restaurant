@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Innan du äter ute – matsäkerhet, risker och dina rättigheter</title>
-<meta name="description" content="Allmän konsumentinformation om matsäkerhet: skadedjur, mögel, bruten kylkedja, vad du själv kan se som gäst, och hur du begär ut kontrollrapporter eller anmäler brister till kommunens miljöförvaltning." />
+<title>Ansvarsfriskrivning och matsäkerhet – allmän konsumentinformation</title>
+<meta name="description" content="Ansvarsfriskrivning och allmän konsumentinformation om matsäkerhet: skadedjur, mögel, bruten kylkedja, vad du själv kan se som gäst, och hur du begär ut kontrollrapporter eller anmäler brister till kommunens miljöförvaltning. Svenska, arabiska och kurdiska." />
 <meta name="robots" content="index, follow" />
 <style>
   :root {
@@ -44,7 +44,7 @@
     position: relative; z-index: 2;
   }
   .wrap { max-width: 760px; margin: 0 auto; padding: 46px 22px 80px; position: relative; z-index: 1; }
-  .langbar { display: flex; gap: 8px; justify-content: flex-end; margin-bottom: 40px; }
+  .langbar { display: flex; gap: 8px; justify-content: flex-end; flex-wrap: wrap; margin-bottom: 40px; }
   .langbar button {
     background: transparent; color: var(--muted);
     border: 1px solid var(--line); border-radius: 999px;
@@ -74,6 +74,19 @@
   h1 { font-size: clamp(30px, 6vw, 46px); line-height: 1.2; margin: 0 0 28px; font-weight: 600; }
   .lead { font-size: 19px; color: #d9d5ce; margin-bottom: 34px; }
   p { margin: 0 0 20px; }
+  /* Ansvarsfriskrivning */
+  .disclaimer {
+    border: 1px dashed var(--accent); border-radius: 10px;
+    background: rgba(201, 162, 39, .05);
+    padding: 22px 24px; margin: 0 0 34px;
+    font-size: 15.5px; color: #d6d2cb;
+  }
+  .disclaimer h2 {
+    font-size: 13px; letter-spacing: .16em; text-transform: uppercase;
+    margin: 0 0 12px; color: var(--accent);
+  }
+  [dir="rtl"] .disclaimer h2 { letter-spacing: 0; font-size: 15px; }
+  .disclaimer p:last-child { margin-bottom: 0; }
   .panel {
     background: var(--panel); border: 1px solid var(--line);
     border-radius: 12px; padding: 26px 26px 10px; margin: 34px 0;
@@ -122,14 +135,15 @@
 <div class="tape" aria-hidden="true"></div>
 <div class="wrap">
 
-  <div class="langbar" role="group" aria-label="Språk / اللغة">
+  <div class="langbar" role="group" aria-label="Språk / اللغة / Ziman">
     <button type="button" data-lang="sv" aria-pressed="true">Svenska</button>
     <button type="button" data-lang="ar" aria-pressed="false">عربي</button>
+    <button type="button" data-lang="ku" aria-pressed="false">Kurdî</button>
   </div>
 
   <!-- ───────────── SVENSKA ───────────── -->
   <main id="sv" dir="ltr" lang="sv">
-    <div class="brand">Konsumentinformation · Matsäkerhet</div>
+    <div class="brand">Ansvarsfriskrivning · Matsäkerhet</div>
 
     <div class="warnbadge">
       <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true">
@@ -142,11 +156,25 @@
 
     <h1>Innan du äter ute: det här bör du veta.</h1>
 
+    <div class="disclaimer">
+      <h2>Ansvarsfriskrivning</h2>
+      <p>
+        Den här sidan är ingen restaurangsida. Här finns ingen meny, ingen
+        bokning och ingen marknadsföring. Sidan handlar inte om någon namngiven
+        restaurang, person eller verksamhet, och inga påståenden riktas mot
+        någon enskild.
+      </p>
+      <p>
+        Innehållet är allmän konsumentinformation om matsäkerhet och om hur
+        livsmedelstillsynen fungerar i Sverige. Det ersätter inte information
+        från myndigheter. Kontrollera alltid aktuella krav hos Livsmedelsverket
+        eller miljöförvaltningen i din kommun.
+      </p>
+    </div>
+
     <p class="lead">
-      Den här sidan är allmän information om matsäkerhet. Den handlar inte om
-      någon enskild restaurang och pekar inte ut någon verksamhet. Den finns för
-      att du ska kunna bedöma ett kök själv, veta vad du har rätt att kräva och
-      vart du vänder dig när något är fel.
+      Sidan finns för att du ska kunna bedöma ett kök själv, veta vad du har
+      rätt att kräva och vart du vänder dig när något är fel.
     </p>
 
     <p>
@@ -230,17 +258,17 @@
 
     <div class="meta">
       <strong>Allmän konsumentinformation om matsäkerhet.</strong><br />
-      Sidan pekar inte ut någon enskild verksamhet. Uppgifterna om regler och
-      temperaturer bygger på svensk livsmedelslagstiftning och Livsmedelsverkets
-      vägledningar. Kontrollera alltid aktuella krav hos Livsmedelsverket eller
-      din kommun.<br />
+      Sidan pekar inte ut någon enskild verksamhet, person eller kommun.
+      Uppgifterna om regler och temperaturer bygger på svensk
+      livsmedelslagstiftning och Livsmedelsverkets vägledningar och kan ändras.
+      Ingen garanti lämnas för att informationen är fullständig eller aktuell.<br />
       Publicerat 27 augusti 2026.
     </div>
   </main>
 
   <!-- ───────────── عربي ───────────── -->
   <main id="ar" dir="rtl" lang="ar" hidden>
-    <div class="brand">معلومات للمستهلك · سلامة الغذاء</div>
+    <div class="brand">إخلاء مسؤولية · سلامة الغذاء</div>
 
     <div class="warnbadge">
       <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true">
@@ -253,10 +281,23 @@
 
     <h1>قبل ما تأكل برّا: لازم تعرف هالشي.</h1>
 
+    <div class="disclaimer">
+      <h2>إخلاء مسؤولية</h2>
+      <p>
+        هي الصفحة مو صفحة مطعم. ما فيها منيو، ولا حجز طاولات، ولا أي إعلان.
+        وما إلها علاقة بأي مطعم أو شخص أو منشأة مذكورة بالاسم، وما عم توجّه أي
+        ادّعاء لأي جهة معيّنة.
+      </p>
+      <p>
+        المحتوى معلومات عامة للمستهلك عن سلامة الغذاء وعن كيف تشتغل رقابة
+        الغذاء بالسويد. وهي ما تغني عن معلومات الجهات الرسمية. تأكّد دايماً من
+        المتطلبات الحالية عند Livsmedelsverket أو دائرة البيئة ببلديتك.
+      </p>
+    </div>
+
     <p class="lead">
-      هي الصفحة معلومات عامة عن سلامة الغذاء. ما إلها علاقة بمطعم معيّن ولا
-      عم تشير لأي جهة. موجودة لتعرف تقيّم المطبخ بنفسك، وتعرف شو حقّك، ولوين
-      تروح لمّا يكون في شي غلط.
+      الصفحة موجودة لتعرف تقيّم المطبخ بنفسك، وتعرف شو حقّك، ولوين تروح لمّا
+      يكون في شي غلط.
     </p>
 
     <p>
@@ -338,10 +379,134 @@
 
     <div class="meta">
       <strong>معلومات عامة للمستهلك عن سلامة الغذاء.</strong><br />
-      هي الصفحة ما عم تشير لأي جهة معيّنة. المعلومات عن القوانين ودرجات
-      الحرارة مبنية على قانون الغذاء السويدي وإرشادات Livsmedelsverket. تأكّد
-      دايماً من المتطلبات الحالية عند Livsmedelsverket أو بلديتك.<br />
+      هي الصفحة ما عم تشير لأي منشأة أو شخص أو بلدية معيّنة. المعلومات عن
+      القوانين ودرجات الحرارة مبنية على قانون الغذاء السويدي وإرشادات
+      Livsmedelsverket وقابلة للتغيير، وما في ضمان إنها كاملة أو محدّثة.<br />
       نُشر في 27 آب 2026.
+    </div>
+  </main>
+
+  <!-- ───────────── KURDÎ (KURMANCÎ) ───────────── -->
+  <main id="ku" dir="ltr" lang="ku" hidden>
+    <div class="brand">Berpirsiyarî · Ewlehiya xwarinê</div>
+
+    <div class="warnbadge">
+      <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true">
+        <path d="M32 6 L60 56 H4 Z" fill="none" stroke="#c9a227" stroke-width="5" stroke-linejoin="round"/>
+        <rect x="28.5" y="24" width="7" height="16" rx="3.5" fill="#c9a227"/>
+        <circle cx="32" cy="47" r="4" fill="#c9a227"/>
+      </svg>
+      Hişyarî · paqijiya kêm a metbexê xetera tenduristiyê ye
+    </div>
+
+    <h1>Berî ku tu li derve bixwî: divê tu vê zanibî.</h1>
+
+    <div class="disclaimer">
+      <h2>Daxuyaniya berpirsiyariyê</h2>
+      <p>
+        Ev rûpel ne rûpelê xwaringehekê ye. Li vir ne menû, ne rezervasyon û
+        ne jî reklam heye. Ev rûpel ne li ser xwaringeh, kes an karsaziyeke bi
+        nav e, û tu îdia li dijî tu kesî nayê kirin.
+      </p>
+      <p>
+        Naverok agahdariya giştî ya xerîdaran e derbarê ewlehiya xwarinê û
+        çawaniya çavdêriya xwarinê li Swêdê. Ew cihê agahdariya saziyên fermî
+        nagire. Her tim mercên nûjen li cem Livsmedelsverket an beşa jîngehê ya
+        şaredariya xwe kontrol bike.
+      </p>
+    </div>
+
+    <p class="lead">
+      Ev rûpel ji bo we ye ku hûn bi xwe metbexekê binirxînin, mafên xwe
+      bizanin û bizanin ku gava tiştek şaş be, hûn serî li kê bidin.
+    </p>
+
+    <p>
+      Livsmedelsverket texmîn dike ku her sal bi sed hezaran mirov li Swêdê ji
+      ber xwarinê nexweş dikevin. Piraniya bûyeran qet nayên ragihandin, ji ber
+      ku gelek kes difikirin ku zikêşiyeke normal e. Ji ber vê yekê kêmasiyên
+      metbexekê dikarin sal bi sal bidomin bêyî ku kes tiştek bike – û ji ber
+      vê yekê ragihandina te girîng e.
+    </p>
+
+    <div class="signs">
+      <div class="sign">
+        <svg width="46" height="46" viewBox="0 0 64 64" aria-hidden="true">
+          <ellipse cx="30" cy="40" rx="18" ry="12" fill="none" stroke="#c9a227" stroke-width="3.5"/>
+          <circle cx="20" cy="25" r="8" fill="none" stroke="#c9a227" stroke-width="3.5"/>
+          <path d="M48 40 q11 -3 8 -14" fill="none" stroke="#c9a227" stroke-width="3.5" stroke-linecap="round"/>
+          <circle cx="40" cy="36" r="2.6" fill="#c9a227"/>
+        </svg>
+        <span>Mişk û<br />cird</span>
+      </div>
+      <div class="sign">
+        <svg width="46" height="46" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="22" cy="23" r="9" fill="none" stroke="#c9a227" stroke-width="3.5"/>
+          <circle cx="41" cy="17" r="6" fill="none" stroke="#c9a227" stroke-width="3.5"/>
+          <circle cx="45" cy="34" r="7" fill="none" stroke="#c9a227" stroke-width="3.5"/>
+          <path d="M22 32 v18 M41 23 v27 M45 41 v9" stroke="#c9a227" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M9 52 h46" stroke="#c9a227" stroke-width="3.5" stroke-linecap="round"/>
+        </svg>
+        <span>Kef û<br />qirêj</span>
+      </div>
+      <div class="sign">
+        <svg width="46" height="46" viewBox="0 0 64 64" aria-hidden="true">
+          <rect x="15" y="6" width="34" height="52" rx="5" fill="none" stroke="#c9a227" stroke-width="3.5"/>
+          <path d="M15 25 h34" stroke="#c9a227" stroke-width="3.5"/>
+          <path d="M41 13 v7 M41 31 v8" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/>
+          <path d="M21 45 q4 5 8 0 t8 0" fill="none" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <span>Zincîra sarkirinê<br />ya şikestî</span>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Çi bi rastî xwarinê dike xeternak</h2>
+      <ul>
+        <li><strong>Mişk û cird.</strong> Ew bakteriyan bi rîx, mîz û pirça xwe belav dikin. Mişk di metbexê de ne pirsgirêka paqijkirinê ye – ew xetera veguhastina nexweşiyê ye.</li>
+        <li><strong>Kef û qirêjiya kevn.</strong> Kef li dîwaran, di sarincokan û di kanalên erdê de nîşan dide ku şilbûn û paqijkirin nayên birêvebirin. Li wan deran pir caran mêş û kêzik jî hene.</li>
+        <li><strong>Zincîra sarkirinê ya şikestî.</strong> Xwarinên sar divê bi gelemperî herî zêde di +8 °C de bin, pir caran sartir, û xwarina germ herî kêm di +60 °C de. Xwarina nîvgerm tam ew der e ku bakterî zûtirîn zêde dibin.</li>
+        <li><strong>Veguhastina qirêjiyê.</strong> Heman texte an kêr ji bo goştê xav û xwarina amade salmonella û campylobacter belav dike.</li>
+        <li><strong>Paqijiya destan.</strong> Karmendê ku di navbera pere, çopê û xwarinê de bêyî şûştina destan digere, yek ji rêyên herî berbelav ên veguhastinê ye.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Nîşanên ku tu bi xwe wek mêvan dikarî bibînî</h2>
+      <ul>
+        <li>Tûwalet û destşoyên qirêj. Tiştê ku li wir bi sextî tê kirin, kêm caran di metbexê de baştir tê kirin.</li>
+        <li>Bêhna rûnê kevn, kanalîzasyonê an şilbûn û kefê.</li>
+        <li>Sarincok, bûfeya salatê û sarincoka vexwarinan ku sar nayên hîs kirin.</li>
+        <li>Rîxa mişkan, şopên gestinê li ser pakêtan, mêş li dora xwarinê.</li>
+        <li>Xwarina ku demeke dirêj vekirî û nîvgerm maye, bê sercem.</li>
+        <li>Nahêlin tu metbexê bibînî, tevî ku tu bi rêzdarî dipirsî.</li>
+      </ul>
+    </div>
+
+    <div class="callout">
+      Metbexek bi mişk, kef û sarincokên nîvgerm ne “nirxandineke xerab” e.
+      Ew xetereke tenduristiyê ye – û tenê kontrola xwarinê ya şaredariyê
+      dikare wê rawestîne.
+    </div>
+
+    <div class="panel">
+      <h2>Mafên te – û çi bi rastî bi kêr tê</h2>
+      <ul>
+        <li><strong>Raporên kontrolê belgeyên giştî ne.</strong> Tu dikarî raporên teftîşa dawî ya xwaringehekê ji beşa jîngehê ya şaredariyê bixwazî, Eskilstuna jî tê de, û ne hewce ye tu diyar bikî çima.</li>
+        <li><strong>Tu dikarî bêyî belgeyan ragihînî.</strong> Ger te kêmasî dîtibe an tu nexweş ketibî, bes e ku tu bibêjî çi, li ku derê û kengî. Şaredarî dikare bêyî agahdarî teftîş bike, ferman bide, cezayê darayî bibirre û di rewşên giran de kar û barê bigire.</li>
+        <li><strong>Ger nexweş bikevî, bibêje te li ku derê xwar.</strong> Bi 1177 an navenda tenduristiyê re têkilî daynin û bibêjin we çi û li ku derê xwar. Bêyî wê girêdanê, bûyer qet di statîstîkan de nayên dîtin.</li>
+        <li><strong>Tu li metbexekê dixebitî?</strong> Mafê te ye ku behsa kêmasiyan bikî. Serî li nûnerê ewlehiyê, Arbetsmiljöverket an beşa jîngehê ya şaredariyê bide. Qanûna hişyarkeran (2021:890) dikare te ji tolhildanê biparêze.</li>
+        <li><strong>Malperek tiştek rawestîne nake.</strong> Tenê desteya çavdêriyê xwedî desthilata teftîşkirinê û fermandanê ye. Ragihandin rêya wê ye.</li>
+      </ul>
+    </div>
+
+    <div class="meta">
+      <strong>Agahdariya giştî ya xerîdaran derbarê ewlehiya xwarinê.</strong><br />
+      Ev rûpel tu karsazî, kes an şaredariyeke taybet nîşan nade. Agahdariyên
+      derbarê qanûn û pileyên germahiyê de li ser bingeha qanûna xwarinê ya
+      Swêdê û rênîşanderên Livsmedelsverket in û dikarin biguherin. Tu garantî
+      nayê dayîn ku agahdarî temam an nûjen e.<br />
+      Weşandin: 27ê Tebaxa 2026.
     </div>
   </main>
 
@@ -350,7 +515,11 @@
 
 <script>
   var buttons = document.querySelectorAll(".langbar button");
-  var panes = { sv: document.getElementById("sv"), ar: document.getElementById("ar") };
+  var panes = {
+    sv: document.getElementById("sv"),
+    ar: document.getElementById("ar"),
+    ku: document.getElementById("ku")
+  };
 
   function show(lang) {
     Object.keys(panes).forEach(function (key) {
@@ -366,7 +535,9 @@
     btn.addEventListener("click", function () { show(btn.dataset.lang); });
   });
 
-  if ((navigator.language || "").toLowerCase().indexOf("ar") === 0) show("ar");
+  var pref = (navigator.language || "").toLowerCase();
+  if (pref.indexOf("ar") === 0) show("ar");
+  else if (pref.indexOf("ku") === 0) show("ku");
 </script>
 </body>
 </html>
