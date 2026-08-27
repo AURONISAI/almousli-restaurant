@@ -23,8 +23,28 @@
     font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
+    position: relative;
   }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 22px 90px; }
+  /* Varningsmönster i bakgrunden */
+  body::before {
+    content: "";
+    position: fixed; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Cg transform='rotate(-14 75 75)'%3E%3Cpath d='M75 34 L116 104 H34 Z' fill='none' stroke='%23c9a227' stroke-width='5' stroke-linejoin='round'/%3E%3Crect x='71' y='57' width='8' height='27' rx='3' fill='%23c9a227'/%3E%3Ccircle cx='75' cy='93' r='4.5' fill='%23c9a227'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 150px 150px;
+    opacity: .055;
+    pointer-events: none;
+    z-index: 0;
+  }
+  /* Varningstejp */
+  .tape {
+    height: 14px;
+    background-image: repeating-linear-gradient(
+      -45deg, #c9a227 0 16px, #101114 16px 32px
+    );
+    position: relative; z-index: 2;
+  }
+  .tape.bottom { margin-top: 0; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 46px 22px 80px; position: relative; z-index: 1; }
   .langbar {
     display: flex; gap: 8px; justify-content: flex-end; margin-bottom: 40px;
   }
@@ -41,6 +61,40 @@
   .brand {
     font-size: 13px; letter-spacing: .22em; text-transform: uppercase;
     color: var(--accent); margin-bottom: 18px;
+  }
+  /* Varningsskylt ovanför rubriken */
+  .warnbadge {
+    display: inline-flex; align-items: center; gap: 12px;
+    border: 2px solid var(--accent); border-radius: 8px;
+    background: rgba(201, 162, 39, .09);
+    padding: 10px 18px; margin-bottom: 26px;
+    font-size: 14px; font-weight: 700;
+    letter-spacing: .12em; text-transform: uppercase;
+    color: #f2d777;
+  }
+  .warnbadge svg { flex: 0 0 auto; }
+  [dir="rtl"] .warnbadge { letter-spacing: 0; }
+  /* Skyltar: skadedjur, mögel, smutsig kyl */
+  .signs {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 14px; margin: 34px 0 38px;
+  }
+  .sign {
+    border: 2px solid var(--accent); border-radius: 10px;
+    background: rgba(201, 162, 39, .06);
+    padding: 20px 12px 16px; text-align: center;
+  }
+  .sign svg { display: block; margin: 0 auto 12px; }
+  .sign span {
+    display: block; font-size: 12.5px; font-weight: 700;
+    letter-spacing: .1em; text-transform: uppercase; color: #f2d777;
+    line-height: 1.4;
+  }
+  [dir="rtl"] .sign span { letter-spacing: 0; text-transform: none; font-size: 14px; }
+  @media (max-width: 560px) {
+    .signs { grid-template-columns: 1fr; }
+    .sign { display: flex; align-items: center; gap: 16px; text-align: start; padding: 14px 16px; }
+    .sign svg { margin: 0; }
   }
   h1 {
     font-size: clamp(30px, 6vw, 46px);
@@ -74,6 +128,7 @@
 </style>
 </head>
 <body>
+<div class="tape" aria-hidden="true"></div>
 <div class="wrap">
 
   <div class="langbar" role="group" aria-label="Språk / اللغة">
@@ -84,6 +139,15 @@
   <!-- ───────────── SVENSKA ───────────── -->
   <main id="sv" dir="ltr" lang="sv">
     <div class="brand">Almousli Restaurang · Eskilstuna</div>
+
+    <div class="warnbadge">
+      <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true">
+        <path d="M32 6 L60 56 H4 Z" fill="none" stroke="#c9a227" stroke-width="5" stroke-linejoin="round"/>
+        <rect x="28.5" y="24" width="7" height="16" rx="3.5" fill="#c9a227"/>
+        <circle cx="32" cy="47" r="4" fill="#c9a227"/>
+      </svg>
+      Varning · dokumenterade hygienbrister
+    </div>
 
     <h1>Vi ber Eskilstuna om ursäkt.</h1>
 
@@ -103,6 +167,37 @@
       Det är oacceptabelt. Vi skyller inte på någon annan, inte på personal och
       inte på omständigheterna. Ansvaret är vårt.
     </p>
+
+    <div class="signs">
+      <div class="sign">
+        <svg width="46" height="46" viewBox="0 0 64 64" aria-hidden="true">
+          <ellipse cx="30" cy="40" rx="18" ry="12" fill="none" stroke="#c9a227" stroke-width="3.5"/>
+          <circle cx="20" cy="25" r="8" fill="none" stroke="#c9a227" stroke-width="3.5"/>
+          <path d="M48 40 q11 -3 8 -14" fill="none" stroke="#c9a227" stroke-width="3.5" stroke-linecap="round"/>
+          <circle cx="40" cy="36" r="2.6" fill="#c9a227"/>
+        </svg>
+        <span>Skadedjur<br />i lokalen</span>
+      </div>
+      <div class="sign">
+        <svg width="46" height="46" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="22" cy="23" r="9" fill="none" stroke="#c9a227" stroke-width="3.5"/>
+          <circle cx="41" cy="17" r="6" fill="none" stroke="#c9a227" stroke-width="3.5"/>
+          <circle cx="45" cy="34" r="7" fill="none" stroke="#c9a227" stroke-width="3.5"/>
+          <path d="M22 32 v18 M41 23 v27 M45 41 v9" stroke="#c9a227" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M9 52 h46" stroke="#c9a227" stroke-width="3.5" stroke-linecap="round"/>
+        </svg>
+        <span>Mögel och<br />smuts</span>
+      </div>
+      <div class="sign">
+        <svg width="46" height="46" viewBox="0 0 64 64" aria-hidden="true">
+          <rect x="15" y="6" width="34" height="52" rx="5" fill="none" stroke="#c9a227" stroke-width="3.5"/>
+          <path d="M15 25 h34" stroke="#c9a227" stroke-width="3.5"/>
+          <path d="M41 13 v7 M41 31 v8" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/>
+          <path d="M21 45 q4 5 8 0 t8 0" fill="none" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <span>Smutsig kyl<br />och frys</span>
+      </div>
+    </div>
 
     <div class="panel">
       <h2>Vad vi gör nu</h2>
@@ -143,6 +238,15 @@
   <main id="ar" dir="rtl" lang="ar" hidden>
     <div class="brand">مطعم الموصلي · إسكيلستونا</div>
 
+    <div class="warnbadge">
+      <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true">
+        <path d="M32 6 L60 56 H4 Z" fill="none" stroke="#c9a227" stroke-width="5" stroke-linejoin="round"/>
+        <rect x="28.5" y="24" width="7" height="16" rx="3.5" fill="#c9a227"/>
+        <circle cx="32" cy="47" r="4" fill="#c9a227"/>
+      </svg>
+      تحذير · مخالفات نظافة موثّقة
+    </div>
+
     <h1>منعتذر من أهل إسكيلستونا.</h1>
 
     <p class="lead">
@@ -160,6 +264,37 @@
       هاد شي غير مقبول. ما عنا حجة، ولا منرمي المسؤولية على الموظفين ولا على
       الظروف. المسؤولية علينا نحنا.
     </p>
+
+    <div class="signs">
+      <div class="sign">
+        <svg width="46" height="46" viewBox="0 0 64 64" aria-hidden="true">
+          <ellipse cx="30" cy="40" rx="18" ry="12" fill="none" stroke="#c9a227" stroke-width="3.5"/>
+          <circle cx="20" cy="25" r="8" fill="none" stroke="#c9a227" stroke-width="3.5"/>
+          <path d="M48 40 q11 -3 8 -14" fill="none" stroke="#c9a227" stroke-width="3.5" stroke-linecap="round"/>
+          <circle cx="40" cy="36" r="2.6" fill="#c9a227"/>
+        </svg>
+        <span>قوارض بالمحل</span>
+      </div>
+      <div class="sign">
+        <svg width="46" height="46" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="22" cy="23" r="9" fill="none" stroke="#c9a227" stroke-width="3.5"/>
+          <circle cx="41" cy="17" r="6" fill="none" stroke="#c9a227" stroke-width="3.5"/>
+          <circle cx="45" cy="34" r="7" fill="none" stroke="#c9a227" stroke-width="3.5"/>
+          <path d="M22 32 v18 M41 23 v27 M45 41 v9" stroke="#c9a227" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M9 52 h46" stroke="#c9a227" stroke-width="3.5" stroke-linecap="round"/>
+        </svg>
+        <span>عفن ووسخ</span>
+      </div>
+      <div class="sign">
+        <svg width="46" height="46" viewBox="0 0 64 64" aria-hidden="true">
+          <rect x="15" y="6" width="34" height="52" rx="5" fill="none" stroke="#c9a227" stroke-width="3.5"/>
+          <path d="M15 25 h34" stroke="#c9a227" stroke-width="3.5"/>
+          <path d="M41 13 v7 M41 31 v8" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/>
+          <path d="M21 45 q4 5 8 0 t8 0" fill="none" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <span>برادات مو نظيفة</span>
+      </div>
+    </div>
 
     <div class="panel">
       <h2>شو عم نعمل هلّق</h2>
@@ -197,6 +332,7 @@
   </main>
 
 </div>
+<div class="tape bottom" aria-hidden="true"></div>
 
 <script>
   var buttons = document.querySelectorAll(".langbar button");
